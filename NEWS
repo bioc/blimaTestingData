@@ -1,0 +1,5 @@
+blimaTestingData NEWS:
+	Version 0.99.*:
+		* Bioconductor review process.
+		* Removed annotation object annotationHumanHT12V4
+		* Vignette language corrected by Pavla Jumrova, thanks!

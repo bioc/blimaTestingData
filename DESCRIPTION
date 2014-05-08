@@ -1,0 +1,17 @@
+Package: blimaTestingData
+Type: Package
+Title: Data for testing of the package blima.
+Version: 0.99.17
+Date: 2014-05-03
+Author: Vojtech Kulvait
+Maintainer: Vojtech Kulvait <kulvait@gmail.com>
+Description: Experiment data package. The set were prepared using
+        microarray images of human mesenchymal cells treated with
+        various supplements. This package is intended to provide
+        example data to test functionality provided by blima.
+License: GPL-3
+Depends: R(>= 3.0.0)
+Imports:
+Suggests: blima, beadarray, illuminaHumanv4.db, BiocStyle
+URL: https://bitbucket.org/kulvait/blima
+biocViews: RNAExpressionData

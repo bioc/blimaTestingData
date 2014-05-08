@@ -1,0 +1,12 @@
+\section{Preparing \Robject{blimatesting} object}
+This chapter is an step by step description how to prepare object to be used inside \Biocpkg{blima} package.
+
+In the \url{https://bitbucket.org/kulvait/blima/downloads/BLIMATESTINGRAW.zip} were prepared raw data in usual structure. Let expect we have unzipped BLIMATESTINGRAW.zip in the directory tmpDir = "/tmp/BLIMATESTINGRAW".
+
+In the tmpDir there are two subdirectories 6898481097 and 6898481102 with the scanner text and image files. Each directory contains data from one array kit. It is mandatory to force scanner output to contain txt and tif files to be able to do image processing.
+
+In the tmpDir there are also annotation data for our experiments. There are simply data in tsv (tab separated values) format. These data will work as annotation of our experiments. It is a good practice to prepare such data for each experiment. These files are annotation\_6898481097.csv  annotation\_6898481102.csv. There are also annotations for the chips used in chips.txt. These annotation data does not have to follow exactly the form in the described files these are just examples.
+
+The last directory in tmpDir structure called Illumina contains chip annotation information.
+
+Now we can prepare list of the two objects prepared with the \Biocpkg{beadarray} ready to process with the \Biocpkg{blima}. Basicly we add annotations of the data to the data objects and process images using readIllumina function. First we load \Biocpkg{beadarray} and prepare two helper functions. 
