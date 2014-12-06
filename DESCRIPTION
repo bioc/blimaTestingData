@@ -1,7 +1,7 @@
 Package: blimaTestingData
 Type: Package
 Title: Data for testing of the package blima.
-Version: 0.101.0
+Version: 0.101.1
 Date: 2014-05-03
 Author: Vojtech Kulvait
 Maintainer: Vojtech Kulvait <kulvait@gmail.com>
@@ -11,7 +11,7 @@ Description: Experiment data package. The set were prepared using
         example data to test functionality provided by blima.
 License: GPL-3
 Depends: R(>= 3.0.0)
-Imports:
+Imports: 
 Suggests: blima, beadarray, illuminaHumanv4.db, BiocStyle
 URL: https://bitbucket.org/kulvait/blima
-biocViews: RNAExpressionData
+biocViews: RNASeqData, ExperimentData, GEO
